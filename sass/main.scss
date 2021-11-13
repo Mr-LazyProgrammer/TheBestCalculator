@@ -1,0 +1,27 @@
+@import 'app';
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: white;
+    .mainContainer{
+        width: 100vw;
+        min-height: 100vh;
+    }
+
+    .center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .centerY{
+        display: flex;
+        align-items: center;
+    }
+}
+

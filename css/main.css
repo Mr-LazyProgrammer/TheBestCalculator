@@ -1,0 +1,70 @@
+.app {
+  width: 320px;
+  height: 600px;
+  background-color: #161d20;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-shadow: 0px 0px 24px 2px rgba(204, 204, 204, 0.3);
+  -moz-box-shadow: 0px 0px 24px 2px rgba(204, 204, 204, 0.3);
+  box-shadow: 0px 0px 24px 2px rgba(204, 204, 204, 0.3);
+  border-radius: 5px; }
+  .app header h4 {
+    line-height: 40px;
+    margin-left: 1.5rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    min-height: 40px; }
+  .app .screen {
+    padding: 0.5rem;
+    background-color: #4e5e64;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end; }
+    .app .screen .previous {
+      font-size: 2rem;
+      color: #2c3632; }
+    .app .screen .current {
+      font-size: 3.5rem;
+      color: #bdbebe; }
+  .app .main {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: "screen screen screen screen" "screen screen screen screen" "ac ac c c"; }
+    .app .main .screen {
+      grid-area: screen; }
+    .app .main .btn {
+      border-radius: 50%;
+      margin: 10px;
+      background-color: burlywood; }
+    .app .main .op {
+      background-color: cadetblue; }
+    .app .main .eq {
+      background-color: crimson; }
+    .app .main #ac {
+      grid-area: ac;
+      border-radius: 40px; }
+    .app .main #c {
+      grid-area: c;
+      border-radius: 40px; }
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Poppins', sans-serif; }
+
+body {
+  background-color: white; }
+  body .mainContainer {
+    width: 100vw;
+    min-height: 100vh; }
+  body .center {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  body .centerY {
+    display: flex;
+    align-items: center; }
